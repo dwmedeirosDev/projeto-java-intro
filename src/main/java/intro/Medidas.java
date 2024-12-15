@@ -12,7 +12,9 @@ public class Medidas {
     //3.2 - Métodos e funções
 
     public static void main(String[] args){
+    }
 
+    public static void  ifSimples(){
         // Condicional = Verificar uma condição, fazer uma pergunta p/ pessoa, hardware ou software
         // if = se, else = senão
 
