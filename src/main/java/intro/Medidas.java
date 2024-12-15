@@ -12,10 +12,24 @@ public class Medidas {
     //3.2 - Métodos e funções
 
     public static void main(String[] args){
+        // switch - Selecionar o comportamento do programa conforme a escolha da pessoa ou software
+
+        String opcao = "normal";
+
+        switch (opcao){
+            case "ifSimples":
+                System.out.println("Você escolheu executar o método ifSimples");
+                ifSimples();
+                break;
+            case "normal":
+                System.out.println("Você escolheu executar o método normal");
+                calcAreaModoExtenso();
+                break;
+        }
     }
 
     public static void  ifSimples(){
-        // Condicional = Verificar uma condição, fazer uma pergunta p/ pessoa, hardware ou software
+        // Condicional - Verificar uma condição, fazer uma pergunta p/ pessoa, hardware ou software
         // if = se, else = senão
 
         String modo = "curto";
@@ -32,7 +46,7 @@ public class Medidas {
     public static void calcAreaModoExtenso(){
 
         //Cálculo de área
-        System.out.println("Cálculo de área - Modo normal");
+        System.out.println("Cálculo de área - MODO NORMAL");
         int largura;
         int comprimento;
         int resultado;
