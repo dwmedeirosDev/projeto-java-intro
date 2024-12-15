@@ -9,11 +9,21 @@ public class Medidas {
 
     //3.1- Atributos - características
 
-    //3.2 - Métrodos e funções
+    //3.2 - Métodos e funções
 
     public static void main(String[] args){
-        calcAreaModoExtenso();
-        calcAreaModoCompacto();
+
+        // Condicional = Verificar uma condição, fazer uma pergunta p/ pessoa, hardware ou software
+        // if = se, else = senão
+
+        String modo = "curto";
+
+        if(modo == "curto"){
+            calcAreaModoCompacto();
+        }
+        else {
+            calcAreaModoExtenso();
+        }
     }
 
     // Código normal
@@ -32,7 +42,6 @@ public class Medidas {
         System.out.println("A largura é de " + largura + " m");
         System.out.println("O comprimento é de " + comprimento + " m");
         System.out.println("Logo, a área é de " + resultado + " m²");
-
     }
 
     // Código reduzido (Otimizado)
