@@ -5,7 +5,6 @@ package intro;
 // 2- Referencia as bibliotecas
 
 // 3- Classe
-
 public class Medidas {
 
     //3.1- Atributos - características
@@ -13,16 +12,15 @@ public class Medidas {
     //3.2 - Métrodos e funções
 
     public static void main(String[] args){
-        System.out.println("Hello World");
-        System.out.println("Cálculo de áreas");
+        calcAreaModoExtenso();
+        calcAreaModoCompacto();
     }
 
     // Código normal
-
-    public void calcAreaModoExtenso(){
+    public static void calcAreaModoExtenso(){
 
         //Cálculo de área
-
+        System.out.println("Cálculo de área - Modo normal");
         int largura;
         int comprimento;
         int resultado;
@@ -38,16 +36,14 @@ public class Medidas {
     }
 
     // Código reduzido (Otimizado)
-
-    public void calcAreaModoCompacto(){
+    public static void calcAreaModoCompacto(){
 
         //Cálculo de área
-
+        System.out.println("Cálculo de área - MODO COMPACTO");
         int largura = 10;
         int comprimento = 10;
 
         System.out.println("A largura é de " + largura + " m" + " e o comprimento é de " + comprimento
                 + " m" + " Logo, a área é de " + largura * comprimento + " m²");
     }
-
 }
