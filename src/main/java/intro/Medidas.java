@@ -1,35 +1,49 @@
 // 1- Pacote
-
 package intro;
 
 // 2- Referencia as bibliotecas
+// Import Scanner
+import java.util.Scanner;
 
 // 3- Classe
 public class Medidas {
+    // 3.1- Atributos - características
 
-    //3.1- Atributos - características
-
-    //3.2 - Métodos e funções
+    // 3.2 - Métodos e funções
 
     public static void main(String[] args){
         // switch - Selecionar o comportamento do programa conforme a escolha da pessoa ou software
 
-        String opcao = "default";
+        // Utilizar a classe Scanner do Java para ler a escolha do usuário no console
 
+        // Necessário instanciar - = new Scanner () / System.in - Entrada
+        Scanner scanner  = new Scanner(System.in);
+        System.out.println("Menu de opções");
+        System.out.println("1- Modo ifSimples");
+        System.out.println("2- Modo normal");
+        System.out.println("3- Qual compacto");
+        System.out.println("4- Sair");
+        System.out.println("Digite a opção desejada: ");
+        String opcao = scanner.next();
+
+        // String opcao = "default";
         switch (opcao){
-            case "ifSimples":
+            case "1":
                 System.out.println("Você escolheu executar o método ifSimples");
                 ifSimples();
                 break;
-            case "normal":
+            case "2":
                 System.out.println("Você escolheu executar o método normal");
                 calcAreaModoExtenso();
                 break;
-            case "compacto":
+            case "3":
                 System.out.println("Você escolheu o método compacto");
                 calcAreaModoCompacto();
+            case "Exit":
+                System.out.println("Sair");
+                break;
             default:
-                System.out.println("Nenhuma das opções");
+                System.out.println("Erro: Não escolheu nenhuma das opções");
                 break;
         }
     }
