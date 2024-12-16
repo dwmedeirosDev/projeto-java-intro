@@ -14,7 +14,7 @@ public class Medidas {
     public static void main(String[] args){
         // switch - Selecionar o comportamento do programa conforme a escolha da pessoa ou software
 
-        String opcao = "normal";
+        String opcao = "default";
 
         switch (opcao){
             case "ifSimples":
@@ -24,6 +24,12 @@ public class Medidas {
             case "normal":
                 System.out.println("Você escolheu executar o método normal");
                 calcAreaModoExtenso();
+                break;
+            case "compacto":
+                System.out.println("Você escolheu o método compacto");
+                calcAreaModoCompacto();
+            default:
+                System.out.println("Nenhuma das opções");
                 break;
         }
     }
