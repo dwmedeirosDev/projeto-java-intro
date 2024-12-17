@@ -1,27 +1,29 @@
 // 1- Pacote
-package intro;
 
+package intro;
 // 2- Referencia as bibliotecas
 // Import Scanner
+
 import java.util.Scanner;
 
 // 3- Classe
 public class Medidas {
-    // 3.1- Atributos - características
 
+    // 3.1- Atributos - características
     // 3.2 - Métodos e funções
 
     public static void main(String[] args){
+
         // switch - Selecionar o comportamento do programa conforme a escolha da pessoa ou software
-
         // Utilizar a classe Scanner do Java para ler a escolha do usuário no console
-
         // Necessário instanciar - = new Scanner () / System.in - Entrada
         Scanner scanner  = new Scanner(System.in);
         System.out.println("Menu de opções");
         System.out.println("1- Modo ifSimples");
         System.out.println("2- Modo normal");
         System.out.println("3- Qual compacto");
+        System.out.println("C- Contagem até 15");
+        System.out.println("R- Contagem regressiva");
         System.out.println("4- Sair");
         System.out.println("Digite a opção desejada: ");
         String opcao = scanner.next();
@@ -39,6 +41,15 @@ public class Medidas {
             case "3":
                 System.out.println("Você escolheu o método compacto");
                 calcAreaModoCompacto();
+                break;
+            case "c":
+            case "C":
+                contarAte10();
+                break;
+            case "r":
+            case "R":
+                regressiva();
+                break;
             case "Exit":
                 System.out.println("Sair");
                 break;
@@ -49,9 +60,9 @@ public class Medidas {
     }
 
     public static void  ifSimples(){
+
         // Condicional - Verificar uma condição, fazer uma pergunta p/ pessoa, hardware ou software
         // if = se, else = senão
-
         String modo = "curto";
 
         if(modo == "curto"){
@@ -90,5 +101,23 @@ public class Medidas {
 
         System.out.println("A largura é de " + largura + " m" + " e o comprimento é de " + comprimento
                 + " m" + " Logo, a área é de " + largura * comprimento + " m²");
+    }
+
+    public static void contarAte10(){
+
+        //Loops ou repetições
+        //for - repetição incondicional
+        System.out.println("Contagem até 15");
+        for(int numero = 1; numero <=15; numero++){
+            System.out.println(numero);
+        }
+    }
+
+    public static void regressiva(){
+
+        System.out.println("Contagem regressiva");
+        for(int numero = 10; numero >= 0; numero--){
+            System.out.println(numero);
+        }
     }
 }
