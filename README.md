@@ -1,12 +1,16 @@
-# Introdução ao Java
+## Introdução ao Java
 
 Repositório criado para aplicar e testar os conhecimentos adquiridos no curso de Java da Iterasys.
 
-## Tecnologias
+---
+
+### Tecnologias
 
 ☕ **Java**: Linguagem principal.
 
-## Funcionalidades
+---
+
+### Funcionalidades
 
 🔄 **Modo ifSimples**: Executa uma verificação condicional simples e escolhe entre dois métodos de cálculo de área.  
 📐 **Modo normal**: Calcula a área usando a abordagem detalhada (extensa).  
